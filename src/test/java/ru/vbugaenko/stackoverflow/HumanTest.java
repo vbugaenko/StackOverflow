@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -17,7 +18,8 @@ import static org.junit.Assert.assertTrue;
  */
 
 public class HumanTest {
-    List<Food> list;
+    private static List<Food> list;
+    private static Human human = new Human();
 
     @Before
     public void prepareList(){
@@ -33,11 +35,27 @@ public class HumanTest {
     }
 
     @Test
-    public void eatRemovLastFoodFromList() {
-        Human h = new Human();
-        h.eat(list);
+    public void eatRemoveLastFoodFromList() {
+        human.eat(list);
         assertFalse(list.contains(new Food("fish")));
         assertTrue(list.size() == 2);
+    }
+
+    /**
+     * Предложено другим человеком:
+     * Нужно проверить:
+     * - что размер списка уменьшился на единицу,
+     * - что съеден именно последний объект,
+     * - что съеденный объект больше не в списке:
+     * */
+    @Test
+    public static void testEatMethod() {
+        int size = list.size();
+        Food foodToBeDeleted = list.get(list.size() - 1);
+        Food foodDeleted = human.eat(list);
+        assertEquals(foodDeleted, foodToBeDeleted);
+        assertEquals(list.size(), size - 1);
+        assertFalse(list.contains(foodToBeDeleted));
     }
 
 }
