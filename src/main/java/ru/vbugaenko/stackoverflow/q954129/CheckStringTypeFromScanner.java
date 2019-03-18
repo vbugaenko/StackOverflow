@@ -1,4 +1,4 @@
-package ru.vbugaenko.stackoverflow;
+package ru.vbugaenko.stackoverflow.q954129;
 
 import java.util.Scanner;
 
