@@ -1,8 +1,8 @@
-package ru.vbugaenko.stackoverflow.q35701337;
+package ru.vbugaenko.stackoverflow.q957877;
 
 /**
  * List в основе небольшой БД.
- * https://ru.stackoverflow.com/questions/35701337/
+ * https://ru.stackoverflow.com/questions/957877/
  *
  * @since 18.03.2019
  */

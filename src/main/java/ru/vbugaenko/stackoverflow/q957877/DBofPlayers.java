@@ -1,4 +1,4 @@
-package ru.vbugaenko.stackoverflow.q35701337;
+package ru.vbugaenko.stackoverflow.q957877;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
