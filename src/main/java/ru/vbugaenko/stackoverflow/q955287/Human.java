@@ -1,13 +1,6 @@
-package ru.vbugaenko.stackoverflow;
+package ru.vbugaenko.stackoverflow.q955287;
 
 import java.util.List;
-
-/**
- * JUnit тест для метода
- * https://ru.stackoverflow.com/questions/955287/
- *
- * @since 12.03.2019
- */
 
 public class Human {
     private String name;

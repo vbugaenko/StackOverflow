@@ -1,4 +1,4 @@
-package ru.vbugaenko.stackoverflow;
+package ru.vbugaenko.stackoverflow.q955287;
 
 import org.junit.Before;
 import org.junit.Test;
